@@ -1,4 +1,4 @@
-## Zendesk Sample Snippets
+## Zendesk sample snippets
 
 This repository provides you with sample snippets you can use with Zendesk Guide and other Zendesk products.
 
