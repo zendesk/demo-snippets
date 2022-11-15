@@ -1,0 +1,27 @@
+# ide/editor project things
+.idea/
+.vscode/
+
+# vendor directories
+node_modules/
+
+# transient things
+tmp/
+
+# stoopid files
+.DS_Store
+
+# build files
+*.pyc
+build/
+dist/
+.eggs/
+*.egg-info/
+*.dist-info/
+
+# config files
+.zat
+.env
+.ruby-version
+.vscode/settings.json
+.npmrc
