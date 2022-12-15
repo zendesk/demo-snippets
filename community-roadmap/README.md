@@ -14,7 +14,7 @@ The project defines this structure of a roadmap:
 * Product area: An area of the product that you wish to place roadmap items into.
 * Product area item: An individual feature or project that you are considering or planning to do.
 
-The service is built to host multiple products, and thus multiple roadmaps. These are kept fully independent from each other, but you don't need multiple service instances just because you have multiple products.
+The service is built to host multiple products, producing a roadmap for each product. However, each roadmap is fully independent. You don't need multiple service instances for multiple products.
 
 ## Using the service
 
@@ -41,6 +41,6 @@ The project is divided into two major modules:
 
 The [backend](backend/README.md) module is a REST API service built for hosting outside of Zendesk.
 
-The [frontend](frontend/README.md) module is the client of the REST API, built to run inside Zendesk help center, for instance as a custom page.
+The [frontend](frontend/README.md) module is the client of the REST API, built to run inside a Zendesk help center's custom page.
 
 See the individual module's README files for details on how they work.
