@@ -4,7 +4,7 @@ This project provides a public roadmap feature in Zendesk Guide, where the produ
 
 The idea is that customers leave feedback and feature requests in the community. This tool makes it possible to create a publically visible roadmap where each item in the roadmap has a linked community post. Users can vote and comment on the roadmap items simply by voting and commenting in the community. As such it is a specialized and curated view into the community.
 
-![Screenshot of a roadmap created with this tool](/screenshot.png "Screenshot")
+![Screenshot of a roadmap created with this tool](screenshot.png "Screenshot")
 
 ## Structure
 
