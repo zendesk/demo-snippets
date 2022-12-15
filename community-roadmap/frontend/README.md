@@ -1,4 +1,4 @@
-# Frontend for "Community Roadmap"
+# Frontend for "Community roadmap"
 
 This folder contains the frontend for the Zendesk community roadmap project.
 The frontend is built with npm and React. It uses the REST APIs of the backend to serve a roadmap view for all users, and administrative capabilities for the roadmap owners.

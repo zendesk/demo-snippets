@@ -1,8 +1,8 @@
-# Community Roadmap for Zendesk Guide
+# Community roadmap for a Zendesk help center
 
 This project provides a public roadmap feature in Zendesk Guide, where the product roadmap items are driven by community posts.
 
-The idea is that customers leave feedback and feature requests in the community. This tool makes it possible to create a publically visible roadmap where each item in the roadmap has a linked community post. Users can vote and comment on the roadmap items simply by voting and commenting in the community. As such it is a specialized and curated view into the community.
+Customers can leave feedback and feature requests in a Gather community. The tool creates a publicly visible roadmap. Each item in the roadmap is linked to a Gather community post. Users can vote and comment on the roadmap items by voting and commenting on the linked community post.
 
 ![Screenshot of a roadmap created with this tool](screenshot.png "Screenshot")
 
