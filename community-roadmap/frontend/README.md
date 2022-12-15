@@ -19,14 +19,3 @@ Build a distributable script using
 ```
 npm run build
 ```
-
-## Help Center deployment
-
-Create a custom page and add this content to it:
-
-```
-<div class="container">
-  <div class="roadmapContainer" data-product-key="guide"></div>
-</div>
-<script src="{link to script URL}"></script>
-```
