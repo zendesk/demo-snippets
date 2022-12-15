@@ -22,7 +22,7 @@ Once the service is built and deployed, you simply use it by adding an element t
 
 ```
 <div class="container">
-	<div class="roadmapContainer" data-product-key="{my_product_key}"></div>
+	<div class="roadmapContainer" data-product-key="{my_product_key}" data-backend-base-url="{worker_url}"></div>
 </div>
 <script src="{frontend_script_src}"></script>
 ```
@@ -31,6 +31,7 @@ Replace the following placeholder strings:
 
 * `{my_product_key}`: A unique key for your roadmapped product. For example `guide`
 * `{frontend_script_src}`: The URL to the frontend script that you've built and deployed. Typically ending with `/js/main.(version).js`.
+* `{worker_url}`: The URL to the running backend service.
 
 There is an example roadmap deployed on this URL: https://z3n-kaspersor.zendesk.com/hc/p/roadmap
 

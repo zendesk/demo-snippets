@@ -1,22 +1,28 @@
-# Community Roadmap for Zendesk Help Center
+# Backend for "Community roadmap"
 
 The service is built as a Cloudflare Worker with a Cloudflare KV data store.
 
+## Prerequisites
+
 You need a Cloudflare account to host the service. It is free to use Cloudflare for personal use, see [Cloudflare's website](https://www.cloudflare.com/) for more information.
 
-## Development
-
-The service can be run locally using Cloudflare's (wrangler)[https://developers.cloudflare.com/workers/wrangler/] tool.
-
-Installation (on MacOS):
+You need to install Cloudflare's (wrangler)[https://developers.cloudflare.com/workers/wrangler/] tool. Installation (on MacOS):
 ```
 brew install wrangler
 ```
 
-To start a local service, run:
+You need to have created two KV namespaces in Cloudflare for the data storage of the service. KV namespaces can be created using the Cloudflare UI or with the `wrangler` tool.
+
+Open the file (wrangler.toml)[wrangler.toml] to edit the `id` and `preview_id` fields of the file to match your production and test KV namespace IDs.
+
+## Development
+
+To start a local version of the service, run:
 ```
 npm start
 ```
+
+The service is now running locally on URL http://127.0.0.1:8787/
 
 ## Test
 
@@ -46,6 +52,10 @@ newman run tests/AcceptanceTests.postman_collection.json --env-var "baseUrl=$ZEN
 
 ## Deployment
 
+To deploy the code to a production Cloudflare worker, simply run:
+
 ```
 npm run deploy
 ```
+
+If you open the Cloudflare UI you will see that you now have a deployed worker called `community-roadmap`.
