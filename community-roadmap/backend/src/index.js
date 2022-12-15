@@ -81,10 +81,10 @@ async function handleRequest(request, responseHeaders) {
   if (pathParts.length >= 2 && pathParts[0] == "products") {
     const productKey = validateDataKey(pathParts[1]);
     const productData = await actions.getProductData(productKey);
-    responseHeaders.set('Access-Control-Allow-Origin', productData.base_url);
-
+    
     // Require valid JWT for all  write operations
     if (method == "POST" || method == "PUT" || method == "DELETE") {
+      responseHeaders.set('Access-Control-Allow-Origin', productData.base_url);
       if (encodedToken == null) {
         return response(401, responseHeaders, {
           "message": "Not authorized",
