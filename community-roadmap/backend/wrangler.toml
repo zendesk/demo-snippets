@@ -1,0 +1,27 @@
+main = "src/index.js"
+compatibility_date = "2022-12-07"
+usage_model = "bundled"
+
+[triggers]
+crons = [ ]
+
+[env.dev]
+name = "community-roadmap-dev"
+
+[env.dev.vars]
+TEST_MODE = "true"
+
+[[env.dev.kv_namespaces]]
+id = "2b4cf1c918004e83bf8990005fed1d6c"
+binding = "KVDATA"
+preview_id = "b6e9d17a07ec4bec889d721b01a2aa3b"
+
+[env.production]
+name = "community-roadmap"
+
+[env.production.vars]
+TEST_MODE = "false"
+
+[[env.production.kv_namespaces]]
+id = "2b4cf1c918004e83bf8990005fed1d6c"
+binding = "KVDATA"

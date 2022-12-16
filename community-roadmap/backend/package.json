@@ -1,0 +1,13 @@
+{
+  "name": "community-roadmap",
+  "version": "0.0.0",
+  "devDependencies": {
+    "wrangler": "2.6.1"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev --env dev",
+    "test": "newman run tests/AcceptanceTests.postman_collection.json --env-var \"baseUrl=http://127.0.0.1:8787\"",
+    "deploy": "wrangler publish --env production"
+  }
+}
