@@ -47,7 +47,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/hc/api/v2/integration/token",
+					"raw": "{{baseUrl}}/api/v2/help_center/integration/token",
 					"host": [
 						"{{baseUrl}}"
 					],

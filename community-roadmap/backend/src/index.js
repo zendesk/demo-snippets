@@ -43,7 +43,7 @@ async function handleRequest(request, responseHeaders) {
   const decodedToken = jwt.decodeJwt(encodedToken);
   const currentUserId = decodedToken?.payload?.userId;
 
-  if (endpoint == "GET /hc/api/v2/integration/token") {
+  if (endpoint == "GET /api/v2/help_center/integration/token") {
     if (isTestMode) {
       // get token endpoint
       return response(200, responseHeaders, { "token": jwt.getTestToken() })

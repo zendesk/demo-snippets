@@ -40,7 +40,7 @@ When the service is running locally, you can run the tests easily, like this:
 npm run test
 ```
 
-If you need to run the tests against a production service, you need a Zendesk instance and an instance of the community-roadmap service deployed. The Zendesk instance must have the Help Center Integration Token endpoint feature enabled (currently in EAP, available on URL `/hc/api/v2/integration/token`). You should also go to Admin Center to create an API token for your user.
+If you need to run the tests against a production service, you need a Zendesk instance and an instance of the community-roadmap service deployed. The Zendesk instance must have the [secure end-user experience integrations for Help Center](https://support.zendesk.com/hc/en-us/articles/5860358664730) feature. You should also go to Admin Center to create an API token for your user.
 
 Example run against production Zendesk and Cloudflare service:
 ```
