@@ -15,7 +15,7 @@ for (let i = 0; i < roadmapElements.length; i++) {
     console.log("No data-backend-base-url value provided for roadmap '" + productKey + "'. Skipping.")
     continue;
   }
-  const tokenEndpointUrl = roadmapElement.dataset.tokenEndpointUrl || "/hc/api/v2/integration/token";
+  const tokenEndpointUrl = roadmapElement.dataset.tokenEndpointUrl || "/api/v2/help_center/integration/token";
   console.log("Rendering product '" + productKey + "' from backend " + backendBaseUrl);
   const root = ReactDOM.createRoot(roadmapElement);
   root.render(
